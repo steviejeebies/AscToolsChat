@@ -47,6 +47,7 @@ footer {
   background-position: center;
   background-attachment: fixed;
   height:100vh;
+  width:100vw;
   display: flex;
   flex-direction: column;
 }
