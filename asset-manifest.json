@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AscToolsChat/static/css/main.961f6289.chunk.css",
+    "main.css": "/AscToolsChat/static/css/main.e6f0cc6a.chunk.css",
     "main.js": "/AscToolsChat/static/js/main.d1d3537a.chunk.js",
     "main.js.map": "/AscToolsChat/static/js/main.d1d3537a.chunk.js.map",
     "runtime-main.js": "/AscToolsChat/static/js/runtime-main.c9f8104a.js",
@@ -9,10 +9,10 @@
     "static/js/2.4c1f0a5f.chunk.js": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js",
     "static/js/2.4c1f0a5f.chunk.js.map": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js.map",
     "index.html": "/AscToolsChat/index.html",
-    "precache-manifest.ee329ad5cfd8ec238850c0d37d007f88.js": "/AscToolsChat/precache-manifest.ee329ad5cfd8ec238850c0d37d007f88.js",
+    "precache-manifest.6a3b5df95c5be3f4d76e9d9b8285b44c.js": "/AscToolsChat/precache-manifest.6a3b5df95c5be3f4d76e9d9b8285b44c.js",
     "service-worker.js": "/AscToolsChat/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/AscToolsChat/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.961f6289.chunk.css.map": "/AscToolsChat/static/css/main.961f6289.chunk.css.map",
+    "static/css/main.e6f0cc6a.chunk.css.map": "/AscToolsChat/static/css/main.e6f0cc6a.chunk.css.map",
     "static/js/2.4c1f0a5f.chunk.js.LICENSE.txt": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/AscToolsChat/static/media/logo-transparent.44dda33d.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.c9f8104a.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.4c1f0a5f.chunk.js",
-    "static/css/main.961f6289.chunk.css",
+    "static/css/main.e6f0cc6a.chunk.css",
     "static/js/main.d1d3537a.chunk.js"
   ]
 }

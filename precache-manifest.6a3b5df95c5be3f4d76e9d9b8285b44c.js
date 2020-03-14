@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09ed1f13f08847793a194695ce9c8bce",
+    "revision": "914989c4519a4a80883168b39baf80b5",
     "url": "/AscToolsChat/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AscToolsChat/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "9d4406a2032e529bd2c8",
-    "url": "/AscToolsChat/static/css/main.961f6289.chunk.css"
+    "revision": "f40384044fac79efc7a2",
+    "url": "/AscToolsChat/static/css/main.e6f0cc6a.chunk.css"
   },
   {
     "revision": "954f5c3f6292350c0002",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d4406a2032e529bd2c8",
+    "revision": "f40384044fac79efc7a2",
     "url": "/AscToolsChat/static/js/main.d1d3537a.chunk.js"
   },
   {
