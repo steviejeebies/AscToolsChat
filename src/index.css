@@ -26,9 +26,9 @@ footer {
 }
 
 .UserInput {
-  height:100vh;
+  height:100&;
   resize: none;
-  width: 85vw;
+  width: 85&;
 }
 
 .MessageList {
