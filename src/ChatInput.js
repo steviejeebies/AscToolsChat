@@ -37,10 +37,10 @@ function ChatInput() {
 
 	return (
 		<footer>
-			<form onSubmit={handleSubmit}>
-				<textarea className="UserInput" autoFocus={true} onKeyDown={onEnterPress} onChange={handleChange} value={sendBoxValue}/>
-			</form>
-			<Button variant="outline-secondary" onClick={handleSubmit}>Send</Button>
+				<form onSubmit={handleSubmit}>
+					<textarea className="UserInput" autoFocus={true} onKeyDown={onEnterPress} onChange={handleChange} value={sendBoxValue}/>
+				</form>
+				<Button variant="outline-secondary" onClick={handleSubmit}>Send</Button>
 		</footer>);
 }
 

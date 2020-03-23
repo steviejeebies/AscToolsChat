@@ -16,7 +16,9 @@ footer {
   background-color:#c1d5e0;
   align-self: flex-end;
   width: 100vw; /* Fallback for browsers that do not support Custom Properties */
+  height: 15vh; 
   width: calc(var(--vw, 1vw) * 100);
+  height: calc(var(--vh, 1vh) * 15);
   margin-top: 1vh;
   margin-bottom: 1vh;
   margin-top: calc(var(--vh, 1vh));
@@ -29,18 +31,19 @@ footer {
 }
 
 .UserInput {
-  height:100%;
   resize: none;
+  height: 100%;
   width: 85vw; /* Fallback for browsers that do not support Custom Properties */
   width: calc(var(--vw, 1vw) * 85);
 }
 
 .MessageList {
-  width: 100%;
-  height: 85vh; /* Fallback for browsers that do not support Custom Properties */
-  margin-top: 1vh;
+  width: 100vw; /* Fallback for browsers that do not support Custom Properties */
+  height: 85vh; 
+  /*margin-top: 1vh;*/
+  width: calc(var(--vw, 1vw) * 100);
   height: calc(var(--vh, 1vh) * 85);
-  margin-top: calc(var(--vh, 1vh));
+  /*margin-top: calc(var(--vh, 1vh));*/
   display: flex;
   flex-direction: column;
 }
