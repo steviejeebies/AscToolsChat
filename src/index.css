@@ -19,10 +19,10 @@ footer {
   height: 15vh; 
   width: calc(var(--vw, 1vw) * 100);
   height: calc(var(--vh, 1vh) * 15);
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  margin-top: calc(var(--vh, 1vh));
-  margin-bottom: calc(var(--vh, 1vh));
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-top: calc(var(--vh, 2vh));
+  margin-bottom: calc(var(--vh, 2vh));
   display: flex;
   flex-shrink: 1;
   flex-grow: 1;
