@@ -15,7 +15,7 @@ code {
 footer {
   background-color:#c1d5e0;
   align-self: flex-end;
-  width: 100%;
+  width: 100vw;
   display: flex;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -46,8 +46,6 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height:100vh;
-  width:100vw;
   display: flex;
   flex-direction: column;
 }
