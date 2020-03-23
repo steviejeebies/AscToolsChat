@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/AscToolsChat/static/css/main.e6f0cc6a.chunk.css",
-    "main.js": "/AscToolsChat/static/js/main.d1d3537a.chunk.js",
-    "main.js.map": "/AscToolsChat/static/js/main.d1d3537a.chunk.js.map",
+    "main.css": "/AscToolsChat/static/css/main.3551cea6.chunk.css",
+    "main.js": "/AscToolsChat/static/js/main.03ad8f12.chunk.js",
+    "main.js.map": "/AscToolsChat/static/js/main.03ad8f12.chunk.js.map",
     "runtime-main.js": "/AscToolsChat/static/js/runtime-main.c9f8104a.js",
     "runtime-main.js.map": "/AscToolsChat/static/js/runtime-main.c9f8104a.js.map",
     "static/css/2.47e06e2e.chunk.css": "/AscToolsChat/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.4c1f0a5f.chunk.js": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js",
-    "static/js/2.4c1f0a5f.chunk.js.map": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js.map",
+    "static/js/2.2f1ac709.chunk.js": "/AscToolsChat/static/js/2.2f1ac709.chunk.js",
+    "static/js/2.2f1ac709.chunk.js.map": "/AscToolsChat/static/js/2.2f1ac709.chunk.js.map",
     "index.html": "/AscToolsChat/index.html",
-    "precache-manifest.6a3b5df95c5be3f4d76e9d9b8285b44c.js": "/AscToolsChat/precache-manifest.6a3b5df95c5be3f4d76e9d9b8285b44c.js",
+    "precache-manifest.6a54fe46265e2efd93853968c2c4b299.js": "/AscToolsChat/precache-manifest.6a54fe46265e2efd93853968c2c4b299.js",
     "service-worker.js": "/AscToolsChat/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/AscToolsChat/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.e6f0cc6a.chunk.css.map": "/AscToolsChat/static/css/main.e6f0cc6a.chunk.css.map",
-    "static/js/2.4c1f0a5f.chunk.js.LICENSE.txt": "/AscToolsChat/static/js/2.4c1f0a5f.chunk.js.LICENSE.txt",
+    "static/css/main.3551cea6.chunk.css.map": "/AscToolsChat/static/css/main.3551cea6.chunk.css.map",
+    "static/js/2.2f1ac709.chunk.js.LICENSE.txt": "/AscToolsChat/static/js/2.2f1ac709.chunk.js.LICENSE.txt",
     "static/media/index.css": "/AscToolsChat/static/media/logo-transparent.44dda33d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c9f8104a.js",
     "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.4c1f0a5f.chunk.js",
-    "static/css/main.e6f0cc6a.chunk.css",
-    "static/js/main.d1d3537a.chunk.js"
+    "static/js/2.2f1ac709.chunk.js",
+    "static/css/main.3551cea6.chunk.css",
+    "static/js/main.03ad8f12.chunk.js"
   ]
 }
