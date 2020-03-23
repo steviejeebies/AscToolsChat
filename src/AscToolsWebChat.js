@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ChatInput from "./ChatInput.js";
 import MessageList from "./MessageList.js";
@@ -6,49 +6,30 @@ import MessageList from "./MessageList.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
-export default class AscToolsWebChat extends Component {
+function AscToolsWebChat() {
+	let vh = window.innerHeight * 0.01;
+	let vw = window.innerWidth * 0.01;
+	// Then we set the value in the --vh custom property to the root of the document
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+	document.documentElement.style.setProperty('--vw', `${vw}px`);
 
-	/* The following constructor, and the function updateDimensions(), componentDidMount(), componentWillUnmount() 
-		will allow for the width and height of the viewport window to be changed my the user, and for the app
-		to always be full screen within the browser. It was necessary to do it this way in order for the 
-		app to be displayed correctly on mobile too.
-	*/
-  constructor() {
-    super();
-    this.state = {
-      width:  800,
-      height: 182
-    }
-  }
-
-  updateDimensions() {
-    if(window.innerWidth < 500) {
-      this.setState({ width: 450, height: 102 });
-    } else {
-      let update_width  = window.innerWidth-100;
-      let update_height = Math.round(update_width/4.4);
-      this.setState({ width: update_width, height: update_height });
-    }
-  }
-
-  componentDidMount() {
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions.bind(this));
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions.bind(this));
-  }
-
-  render() {
-    return(
-		<div height={this.state.height} width={this.state.width}>
+	window.addEventListener('resize', () => {
+		// We execute the same script as before
+		let vh = window.innerHeight * 0.01;
+		let vw = window.innerWidth * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		document.documentElement.style.setProperty('--vw', `${vw}px`);
+	  });
+	
+	return(
+		<div>
 			<div className="WindowBackground">
 				<MessageList/>
 				<ChatInput />
 			</div>
 			
 		</div>
-	);
-  }
+	)
 }
+
+export default AscToolsWebChat;

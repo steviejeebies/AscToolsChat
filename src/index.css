@@ -15,7 +15,8 @@ code {
 footer {
   background-color:#c1d5e0;
   align-self: flex-end;
-  width: 100vw;
+  width: 100vw; /* Fallback for browsers that do not support Custom Properties */
+  width: calc(var(--vw, 1vw) * 100);
   display: flex;
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -26,9 +27,10 @@ footer {
 }
 
 .UserInput {
-  height:100&;
+  height:100%;
   resize: none;
-  width: 85&;
+  width: 85vw; /* Fallback for browsers that do not support Custom Properties */
+  width: calc(var(--vw, 1vw) * 85);
 }
 
 .MessageList {
@@ -46,6 +48,10 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw; /* Fallback for browsers that do not support Custom Properties */
+  width: calc(var(--vw, 1vw) * 100);
   display: flex;
   flex-direction: column;
 }
