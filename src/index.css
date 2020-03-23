@@ -17,9 +17,11 @@ footer {
   align-self: flex-end;
   width: 100vw; /* Fallback for browsers that do not support Custom Properties */
   width: calc(var(--vw, 1vw) * 100);
-  display: flex;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  margin-top: calc(var(--vh, 1vh));
+  margin-bottom: calc(var(--vh, 1vh));
+  display: flex;
   flex-shrink: 1;
   flex-grow: 1;
   flex-direction: row;
@@ -35,8 +37,10 @@ footer {
 
 .MessageList {
   width: 100%;
-  height: 85vh;
+  height: 85vh; /* Fallback for browsers that do not support Custom Properties */
   margin-top: 1vh;
+  height: calc(var(--vh, 1vh) * 85);
+  margin-top: calc(var(--vh, 1vh));
   display: flex;
   flex-direction: column;
 }
@@ -49,8 +53,8 @@ footer {
   background-position: center;
   background-attachment: fixed;
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
-  width: 100vw; /* Fallback for browsers that do not support Custom Properties */
   width: calc(var(--vw, 1vw) * 100);
   display: flex;
   flex-direction: column;
