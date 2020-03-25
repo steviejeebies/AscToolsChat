@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb7b228d.chunk.css",
-    "main.js": "/static/js/main.037cdb25.chunk.js",
-    "main.js.map": "/static/js/main.037cdb25.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.16deb2c5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.16deb2c5.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.d9b1d16d.chunk.js": "/static/js/2.d9b1d16d.chunk.js",
-    "static/js/2.d9b1d16d.chunk.js.map": "/static/js/2.d9b1d16d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b75b29046483873a9fbf98a40a86eff2.js": "/precache-manifest.b75b29046483873a9fbf98a40a86eff2.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.bb7b228d.chunk.css.map": "/static/css/main.bb7b228d.chunk.css.map",
-    "static/js/2.d9b1d16d.chunk.js.LICENSE.txt": "/static/js/2.d9b1d16d.chunk.js.LICENSE.txt",
-    "static/media/boatImage.jpg": "/static/media/boatImage.5bb53262.jpg",
-    "static/media/cssForWebVersion.css": "/static/media/logo-vector.44dda33d.svg"
+    "main.css": "/Home/static/css/main.34a261eb.chunk.css",
+    "main.js": "/Home/static/js/main.846b8169.chunk.js",
+    "main.js.map": "/Home/static/js/main.846b8169.chunk.js.map",
+    "runtime-main.js": "/Home/static/js/runtime-main.60b75a19.js",
+    "runtime-main.js.map": "/Home/static/js/runtime-main.60b75a19.js.map",
+    "static/css/2.de424728.chunk.css": "/Home/static/css/2.de424728.chunk.css",
+    "static/js/2.303354bb.chunk.js": "/Home/static/js/2.303354bb.chunk.js",
+    "static/js/2.303354bb.chunk.js.map": "/Home/static/js/2.303354bb.chunk.js.map",
+    "index.html": "/Home/index.html",
+    "precache-manifest.ef79356fdb528f9380bd7bc6c8c3abb8.js": "/Home/precache-manifest.ef79356fdb528f9380bd7bc6c8c3abb8.js",
+    "service-worker.js": "/Home/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/Home/static/css/2.de424728.chunk.css.map",
+    "static/css/main.34a261eb.chunk.css.map": "/Home/static/css/main.34a261eb.chunk.css.map",
+    "static/js/2.303354bb.chunk.js.LICENSE.txt": "/Home/static/js/2.303354bb.chunk.js.LICENSE.txt",
+    "static/media/boatImage.jpg": "/Home/static/media/boatImage.5bb53262.jpg",
+    "static/media/cssForWebVersion.css": "/Home/static/media/logo-vector.44dda33d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.16deb2c5.js",
+    "static/js/runtime-main.60b75a19.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.d9b1d16d.chunk.js",
-    "static/css/main.bb7b228d.chunk.css",
-    "static/js/main.037cdb25.chunk.js"
+    "static/js/2.303354bb.chunk.js",
+    "static/css/main.34a261eb.chunk.css",
+    "static/js/main.846b8169.chunk.js"
   ]
 }
