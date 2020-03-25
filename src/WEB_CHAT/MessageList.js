@@ -1,8 +1,7 @@
 import React from 'react';
 import TextBox from "./TextBox.js";
 import { hooks } from 'botframework-webchat-component';
-import ScrollableFeed from 'react-scrollable-feed'
-import Button from 'react-bootstrap/Button';
+import ScrollableFeed from 'react-scrollable-feed';
 
 const { useActivities } = hooks;
 
@@ -12,7 +11,6 @@ function MessageList() {
     // build the app and open the developers options in firefox
 
     const [activities] = useActivities();
-    const scrolledToBottom = true;
 
     console.log(activities);
 

@@ -3,8 +3,6 @@ import { createDirectLine } from 'botframework-webchat';
 import React from 'react';
 import AscToolsWebChat from "./AscToolsWebChat";
 
-
-var connected = false;
 const secret = process.env.DIRECT_LINE_SECRET;
 
 async function getDirectLineToken() {

@@ -4,7 +4,6 @@ import ChatInput from "./ChatInput.js";
 import MessageList from "./MessageList.js";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
 
 function AscToolsWebChat() {
 	let vh = window.innerHeight * 0.01;
