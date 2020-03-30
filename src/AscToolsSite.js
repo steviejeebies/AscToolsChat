@@ -14,7 +14,6 @@ class AscToolsSite extends Component {
         return <App/>
     }
     return (
-      <React.Fragment>
         <Router>
             <Switch>
               <Route exact path="/AscToolsChat" component={Home} />
@@ -24,7 +23,6 @@ class AscToolsSite extends Component {
               <Route component={NoMatch} />
             </Switch>
         </Router>
-      </React.Fragment>
     );
 }
   render() { 
