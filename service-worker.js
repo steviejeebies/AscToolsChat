@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AscToolsChat/precache-manifest.548b78fd55a1ea6dd5e284d1d0b936fe.js"
+  "/AscToolsChat/precache-manifest.ae83a9f58e86d2d90199fc8e89ed6c5a.js"
 );
 
 self.addEventListener('message', (event) => {
