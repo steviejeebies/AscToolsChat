@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AscToolsChat/static/css/main.c1e3b49d.chunk.css",
-    "main.js": "/AscToolsChat/static/js/main.beec2ecf.chunk.js",
-    "main.js.map": "/AscToolsChat/static/js/main.beec2ecf.chunk.js.map",
+    "main.js": "/AscToolsChat/static/js/main.8a95a39a.chunk.js",
+    "main.js.map": "/AscToolsChat/static/js/main.8a95a39a.chunk.js.map",
     "runtime-main.js": "/AscToolsChat/static/js/runtime-main.83582163.js",
     "runtime-main.js.map": "/AscToolsChat/static/js/runtime-main.83582163.js.map",
     "static/css/2.de424728.chunk.css": "/AscToolsChat/static/css/2.de424728.chunk.css",
     "static/js/2.267b5292.chunk.js": "/AscToolsChat/static/js/2.267b5292.chunk.js",
     "static/js/2.267b5292.chunk.js.map": "/AscToolsChat/static/js/2.267b5292.chunk.js.map",
     "index.html": "/AscToolsChat/index.html",
-    "precache-manifest.333753e1f73c797e925f76f4e3189a5d.js": "/AscToolsChat/precache-manifest.333753e1f73c797e925f76f4e3189a5d.js",
+    "precache-manifest.22655f304c6364cc718c911cb229112d.js": "/AscToolsChat/precache-manifest.22655f304c6364cc718c911cb229112d.js",
     "service-worker.js": "/AscToolsChat/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/AscToolsChat/static/css/2.de424728.chunk.css.map",
     "static/css/main.c1e3b49d.chunk.css.map": "/AscToolsChat/static/css/main.c1e3b49d.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.267b5292.chunk.js",
     "static/css/main.c1e3b49d.chunk.css",
-    "static/js/main.beec2ecf.chunk.js"
+    "static/js/main.8a95a39a.chunk.js"
   ]
 }
