@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d5170dd.chunk.css",
-    "main.js": "/static/js/main.bd4fbce0.chunk.js",
-    "main.js.map": "/static/js/main.bd4fbce0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.16deb2c5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.16deb2c5.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.1a315d87.chunk.js": "/static/js/2.1a315d87.chunk.js",
-    "static/js/2.1a315d87.chunk.js.map": "/static/js/2.1a315d87.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.84eee21baeb1971737693cfe4cf5118d.js": "/precache-manifest.84eee21baeb1971737693cfe4cf5118d.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.2d5170dd.chunk.css.map": "/static/css/main.2d5170dd.chunk.css.map",
-    "static/js/2.1a315d87.chunk.js.LICENSE.txt": "/static/js/2.1a315d87.chunk.js.LICENSE.txt",
-    "static/media/boatImage.jpg": "/static/media/boatImage.5bb53262.jpg",
-    "static/media/cssForWebVersion.css": "/static/media/logo-vector.44dda33d.svg"
+    "main.css": "/AscToolsChat/static/css/main.cbe36c60.chunk.css",
+    "main.js": "/AscToolsChat/static/js/main.c4142d69.chunk.js",
+    "main.js.map": "/AscToolsChat/static/js/main.c4142d69.chunk.js.map",
+    "runtime-main.js": "/AscToolsChat/static/js/runtime-main.83582163.js",
+    "runtime-main.js.map": "/AscToolsChat/static/js/runtime-main.83582163.js.map",
+    "static/css/2.de424728.chunk.css": "/AscToolsChat/static/css/2.de424728.chunk.css",
+    "static/js/2.d38f892f.chunk.js": "/AscToolsChat/static/js/2.d38f892f.chunk.js",
+    "static/js/2.d38f892f.chunk.js.map": "/AscToolsChat/static/js/2.d38f892f.chunk.js.map",
+    "index.html": "/AscToolsChat/index.html",
+    "precache-manifest.53a0a0786c213dbf977c733edd08c5a8.js": "/AscToolsChat/precache-manifest.53a0a0786c213dbf977c733edd08c5a8.js",
+    "service-worker.js": "/AscToolsChat/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/AscToolsChat/static/css/2.de424728.chunk.css.map",
+    "static/css/main.cbe36c60.chunk.css.map": "/AscToolsChat/static/css/main.cbe36c60.chunk.css.map",
+    "static/js/2.d38f892f.chunk.js.LICENSE.txt": "/AscToolsChat/static/js/2.d38f892f.chunk.js.LICENSE.txt",
+    "static/media/boatImage.jpg": "/AscToolsChat/static/media/boatImage.5bb53262.jpg",
+    "static/media/cssForWebVersion.css": "/AscToolsChat/static/media/logo-vector.44dda33d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.16deb2c5.js",
+    "static/js/runtime-main.83582163.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.1a315d87.chunk.js",
-    "static/css/main.2d5170dd.chunk.css",
-    "static/js/main.bd4fbce0.chunk.js"
+    "static/js/2.d38f892f.chunk.js",
+    "static/css/main.cbe36c60.chunk.css",
+    "static/js/main.c4142d69.chunk.js"
   ]
 }
