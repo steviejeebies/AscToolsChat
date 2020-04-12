@@ -67,10 +67,7 @@ function App() {
   return (
 	<div>
     <Button onClick={disconnect}>Button</Button>
-		{!!directLine && (
-        <Components.Composer directLine={directLine} store={store}>
-          <AscToolsWebChat />
-        </Components.Composer>
+        <AscToolsWebChat directLine={directLine} store={store}/>
       )}
 	</div>
   );
