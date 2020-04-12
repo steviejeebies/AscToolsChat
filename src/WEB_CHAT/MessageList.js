@@ -12,7 +12,7 @@ function MessageList() {
 
     const [activities] = useActivities();
 
-    console.log(activities);
+    // console.log(activities);
 
     // CAN IGNORE THIS FOR TIME BEING
     /*
