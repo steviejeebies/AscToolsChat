@@ -35,7 +35,7 @@ function ChatInput() {
 			sendMessage(sendBoxValue);
 			setSendBoxValue('');
 		}
-	 }
+	}
 
     const onClickHandler = event => {
         event.preventDefault();
