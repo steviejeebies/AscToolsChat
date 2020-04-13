@@ -81,6 +81,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1vh;
 }
 
 /* following five are used for the "Asclepius.Tools" link at the top right of the page */
