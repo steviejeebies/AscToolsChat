@@ -24,7 +24,7 @@ function TextBox(props) {
     var i = 0;
     const promptsButtonList = (shouldIncludeButtonPrompts) ? 
                             props.message.attachments[0].content.buttons.map(thisButton => 
-                                <Button key={i++} variant="outline-secondary">{thisButton.text}</Button>) : null;
+                                <Button key={i++} variant="outline-secondary" block>{thisButton.text}</Button>) : null;
 
     return (
         <Toast style={thisStyle}>
