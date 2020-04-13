@@ -12,25 +12,11 @@ import MessageList from "./MessageList.js";
 
 // import from React-Boostrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
 var secret = process.env.DIRECT_LINE_SECRET;
-
-// OLD CODE
-// async function getDirectLineToken() {
-//   const res = await fetch('https://directline.botframework.com/v3/directline/tokens/generate', { method: 'POST', 
-// //  mode: 'no-cors',
-//   headers: {
-// //      'Content-Type': 'application/json',
-//       'Authorization': 'Bearer iQ0RbsV7tfA.Iv9w0NYvH7OoZJxqilYyZMdbK-xLhYlco0piDalWT00'
-//       }});
-//   const { token } = await res.json();
-
-//   return token;
-// }
 
 const initializeDirectLine = async setDirectLine => {
   const res = await fetch('https://directline.botframework.com/v3/directline/tokens/generate', 
@@ -77,13 +63,6 @@ function App() {
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
 		document.documentElement.style.setProperty('--vw', `${vw}px`);
 	  });
-// OLD CODE
-//   const [directLine, setDirectLine] = React.useState();
-
-//   if (!directLine) {
-//     // We will load DirectLineJS asynchronously on first render.
-//     getDirectLineToken().then(token => setDirectLine(createDirectLine({ token })));
-//   }
 
   return (
     <div className="WindowBackground">
@@ -93,7 +72,7 @@ function App() {
                 <div className="AscToolsHeader">
                   <a href="https://asclepius.tools/" style={{marginLeft: "1vw"}}><b>Asclepius.Tools</b></a>
                     <DropdownButton as={ButtonGroup} title="Options" id="bg-nested-dropdown" style={{marginTop: "1vh", marginRight: "1vw"}}>
-                        <Dropdown.Item eventKey="1" onClick = {disconnect}>New Patient</Dropdown.Item>
+                        <Dropdown.Item eventKey="1" onClick={disconnect}>New Patient</Dropdown.Item>
                         <Dropdown.Item eventKey="2">Print Advice</Dropdown.Item>
                     </DropdownButton>
                 </div>

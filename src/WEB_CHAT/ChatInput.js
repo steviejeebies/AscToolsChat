@@ -5,7 +5,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-const { useSendMessage,  } = hooks;
+const { useSendMessage } = hooks;
 
 function ChatInput() {
 	const sendMessage = useSendMessage();
