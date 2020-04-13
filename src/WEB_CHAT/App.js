@@ -13,6 +13,9 @@ import MessageList from "./MessageList.js";
 // import from React-Boostrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 var secret = process.env.DIRECT_LINE_SECRET;
 
@@ -84,10 +87,16 @@ function App() {
 
   return (
     <div className="WindowBackground">
-      <Button onClick={disconnect}>New Patient</Button>
           {!!directLine &&
             <Components.Composer directLine={directLine} store={store}>
               <div className="ChatContentContainer">
+                <div className="AscToolsHeader">
+                  <a href="https://asclepius.tools/" style={{marginLeft: "1vw"}}><b>Asclepius.Tools</b></a>
+                    <DropdownButton as={ButtonGroup} title="Options" id="bg-nested-dropdown" style={{marginTop: "1vh", marginRight: "1vw"}}>
+                        <Dropdown.Item eventKey="1" onClick = {disconnect}>New Patient</Dropdown.Item>
+                        <Dropdown.Item eventKey="2">Print Advice</Dropdown.Item>
+                    </DropdownButton>
+                </div>
                 <MessageList/>
                 <ChatInput />
               </div>

@@ -77,3 +77,26 @@ footer {
   flex-direction: column;
 }
 
+.AscToolsHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* following five are used for the "Asclepius.Tools" link at the top right of the page */
+a {
+  font-size: x-large;
+}
+a:link {
+  color: #007bff;
+}
+a:visited {
+  color: #007bff;
+}
+a:hover {
+  color: #5cabff;
+}
+a:active {
+  color: #007bff;
+}
+
