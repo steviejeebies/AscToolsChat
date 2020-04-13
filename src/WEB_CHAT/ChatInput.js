@@ -5,7 +5,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 
-const { useSendMessage } = hooks;
+const { useSendMessage,  } = hooks;
 
 function ChatInput() {
 	const sendMessage = useSendMessage();
@@ -50,10 +50,10 @@ function ChatInput() {
 
 	return (
 		<footer>
-				<form className="FormContainer" onSubmit={handleSubmit}>
+				<form style={{marginLeft: "1vw"}} className="FormContainer" onSubmit={handleSubmit}>
 					<textarea className="UserInput" autoFocus={true} onKeyDown={onEnterPress} onChange={handleChange} value={sendBoxValue}/>
 				</form>
-				<ButtonGroup>
+				<ButtonGroup style={{marginRight: "1vw"}}>
                     <Button variant="outline-secondary" onClick={handleSubmit}>Send</Button>
                     <DropdownButton as={ButtonGroup} variant="outline-secondary" alignRight title="lang" id="bg-nested-dropdown">
                         <Dropdown.Item eventKey="1" value = "en" onClick = {onClickHandler}>English</Dropdown.Item>
