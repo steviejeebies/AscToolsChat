@@ -66,6 +66,11 @@ footer {
   background-attachment: fixed;
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   width: 100vw;
+}
+
+.ChatContentContainer {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
   width: calc(var(--vw, 1vw) * 100);
   display: flex;
