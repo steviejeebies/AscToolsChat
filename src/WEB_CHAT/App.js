@@ -9,7 +9,6 @@ import { Components } from 'botframework-webchat-component';
 // import from other files in our AscTools project
 import ChatInput from "./ChatInput.js";
 import {MessageList} from "./MessageList.js";
-import PrintButton from "./PrintButton";
 // import from React-Boostrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
