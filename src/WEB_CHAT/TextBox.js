@@ -43,9 +43,10 @@ function TextBox(props) {
 
     // This will make a list of buttons to display, but only if the above shouldIncludeButtonPrompts is true
     var i = 0;
+    var textTest = "this is a test prompt";
     const promptsButtonList = (shouldIncludeButtonPrompts) ? 
                             props.message.attachments[0].content.buttons.map(thisButton => 
-                                <Button key={i++} onClick={sendPromptReply} variant="outline-secondary" block>this is a test prompt</Button>) 
+                                <Button key={i++} onClick={sendPromptReply} variant="outline-secondary" block>{textTest}</Button>) 
                             : null;
 
     return (
