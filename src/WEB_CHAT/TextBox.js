@@ -33,7 +33,7 @@ function TextBox(props) {
 
     const sendMessageBack = useSendMessageBack();
     
-    // This method will extract the innerHTML from a prompt button that was pressed, and will send it
+    // This method will extract the innerHTML from a prompt button that was pressed, and will send it.
     // The most important parameter here going forward will be the first parameter, which is just a 
     // fake object at the moment, but it will allow us to send objects of any type to the bot 
     const sendPromptReply = event => {
@@ -45,7 +45,7 @@ function TextBox(props) {
     var i = 0;
     const promptsButtonList = (shouldIncludeButtonPrompts) ? 
                             props.message.attachments[0].content.buttons.map(thisButton => 
-                                <Button key={i++} onClick={sendPromptReply} variant="outline-secondary" block>{thisButton.text}</Button>) 
+                                <Button key={i++} onClick={sendPromptReply} variant="outline-secondary" block>this is a test prompt</Button>) 
                             : null;
 
     return (
