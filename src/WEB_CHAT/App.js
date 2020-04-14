@@ -111,7 +111,7 @@ function App() {
   function AscHeader () {
     return (
       <div className="AscToolsHeader">
-        <homepageLink><a href="https://asclepius.tools/" style={{marginLeft: "1vw"}}><b>Asclepius.Tools</b></a></homepageLink>
+        <homepageLink><a href="https://asclepius.tools/"><b>Asclepius.Tools</b></a></homepageLink>
           <DropdownButton as={ButtonGroup} title="Options" id="bg-nested-dropdown" style={{marginTop: "1vh", marginRight: "1vw"}}>
             <Dropdown.Item eventKey="1" onClick={disconnect}>New Patient</Dropdown.Item>
             <Dropdown.Item eventKey="2" onClick={printer}>Print Advice</Dropdown.Item>
