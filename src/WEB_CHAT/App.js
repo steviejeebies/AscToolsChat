@@ -9,7 +9,8 @@ import { Components } from 'botframework-webchat-component';
 // import from other files in our AscTools project
 import ChatInput from "./ChatInput.js";
 import {MessageList} from "./MessageList.js";
-//import './chat.css';
+import logo from '../WEB_CHAT/image/icon-128x128.png';
+import './chat.css';
 
 // import from React-Boostrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -46,23 +47,51 @@ function App() {
 
 // THIS METHOD IS USED FOR PRINTING OUT THE LIFESTYLE ADVICE FROM THE CHATBOT
     const printer = event => {
-        console.log("button pressed ");
+//------------------------------extracting just advice messages-----------------------------------//
 
-        var m = a[a.length-1][3].attachments[0].content.title;
-        console.log("m = " + m)
-        var doc = new jsPDF('p', 'pt');
-        doc.setProperties({
-            title: 'LifeStyle Advice',
-            subject: 'Advice for patient',
-            author: 'Asclepius Tool',
-            keywords: 'generated, javascript, web 2.0, ajax',
-            creator: '--'
-        });
+        var arr = new Array();
+        var loop1 = 0;
+        for(var i = a[0].length-1; i >= 0; i--){
+          if(a[0][i].hasOwnProperty('text')){
+            if(a[0][i].text.includes('Confidence score : ')){
+              if(a[0][i-1].hasOwnProperty('text')){
+                arr[loop1] = a[0][i-1].text;
+                loop1++;
+              }
+              else {
+                arr[loop1] = a[0][i-1].attachments[0].content.title;
+                loop1++;
+              }
+            }
+          }
+        } 
+        console.log(arr)
+
+
+        var doc = new jsPDF('p', 'mm', "a4");
+        var options = {
+          pagesplit: true
+     };
+//------------------------------extracting just advice messages ends-----------------------------------//
+//------------------------------initial doc set up-----------------------------------//
         doc.setFont('courier')
         doc.setFontType('normal')
-        doc.text(180, 50, 'Lifestyle Advice Report')
-        doc.text(20,70, "Advice : ")
-        doc.text(20, 100, m )
+        doc.text(65, 23, 'Lifestyle Advice Report',)
+        doc.addImage(logo, 'png', 20, 20, 20, 20); 
+        doc.addImage(logo, 'png', 170, 20, 20, 20); 
+        doc.text('The text', doc.internal.pageSize.width, 50, null, null, 'left');
+        doc.text(17,55, "Advice : ");
+//------------------------------initial doc set up end-----------------------------------//
+//------------------------------printing advice-----------------------------------//
+        var y = new String();
+        var loop2 = 0;
+        for(var loop1 = arr.length-1; loop1 >= 0; loop1--){
+      
+          doc.text(17,65, doc.splitTextToSize(arr[loop1]), {maxWidth: 165, align: "justify"})
+          doc = doc.addPage();
+        }
+        
+       
         //different types of fonts can be used for styling the pdf!!!!
 
         // doc.text(20, 20, 'This is the default font.')
@@ -75,11 +104,13 @@ function App() {
         // doc.setFontType('bold')
         // doc.text(20, 50, 'This is helvetica bold.')
 
-        // doc.setFont('courier')
+        // doc.setFont('courier') 
         // doc.setFontType('bolditalic')
         // doc.text(20, 60, 'This is courier bolditalic.')
         
-        // Save the Data and downloads it to the browser
+        // Save the Data and downloads it to the browser 
+//------------------------------printing advice end-----------------------------------//
+
         doc.save('LifesytleAdvice.pdf')
     }
 
@@ -118,7 +149,7 @@ function App() {
             <Dropdown.Item eventKey="2" onClick={printer}>Print Advice</Dropdown.Item>
           </DropdownButton>
       </div>
-    );
+    ); 
   }
 
   return (
