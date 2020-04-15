@@ -47,8 +47,9 @@ function App() {
 // THIS METHOD IS USED FOR PRINTING OUT THE LIFESTYLE ADVICE FROM THE CHATBOT
     const printer = event => {
         console.log("button pressed ");
-        var y = new Array( Object.values(a[a.length -1 ][0]));
-        var x = y[0][10];
+
+        var m = a[a.length-1][3].attachments[0].content.title;
+        console.log("m = " + m)
         var doc = new jsPDF('p', 'pt');
         doc.setProperties({
             title: 'LifeStyle Advice',
@@ -61,7 +62,7 @@ function App() {
         doc.setFontType('normal')
         doc.text(180, 50, 'Lifestyle Advice Report')
         doc.text(20,70, "Advice : ")
-        doc.text(20, 100, x )
+        doc.text(20, 100, m )
         //different types of fonts can be used for styling the pdf!!!!
 
         // doc.text(20, 20, 'This is the default font.')
@@ -112,7 +113,7 @@ function App() {
     return (
       <div className="AscToolsHeader">
         <homepageLink><a href="https://asclepius.tools/">Asclepius.Tools</a></homepageLink>
-          <DropdownButton as={ButtonGroup} title="Options" id="bg-nested-dropdown" style={{marginTop: "1vh", marginRight: "1vw"}}>
+          <DropdownButton as={ButtonGroup} title="Tools" id="bg-nested-dropdown" style={{marginTop: "1vh", marginRight: "1vw"}}>
             <Dropdown.Item eventKey="1" onClick={disconnect}>New Patient</Dropdown.Item>
             <Dropdown.Item eventKey="2" onClick={printer}>Print Advice</Dropdown.Item>
           </DropdownButton>
