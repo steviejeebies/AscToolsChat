@@ -1,7 +1,5 @@
 // import React libraries
 import React, { useState, useEffect } from 'react';
-import $ from 'jquery';
-import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf';
 
 // import libraries from Microsoft's botframework-webchat repo
@@ -50,32 +48,8 @@ function App() {
   };
 
 // THIS METHOD IS USED FOR PRINTING OUT THE LIFESTYLE ADVICE FROM THE CHATBOT
-    const printer = event => {
-        console.log("button pressed ");  
-        var arr = new Array();
-        var loop1 = 0;
-        for(var i = a[0].length-1; i >= 0; i--){
-          if(a[0][i].hasOwnProperty('text')){
-            if(a[0][i].text.includes('Confidence score : ')){
-              if(a[0][i-1].hasOwnProperty('text')){
-                arr[loop1] = a[0][i-1].text;
-                loop1++;
-              }
-              else {
-                arr[loop1] = a[0][i-1].attachments[0].content.title;
-                loop1++;
-              }
-            }
-          }
-        } 
-        console.log(arr)
-
-
-        var doc = new jsPDF('p', 'mm', "a4");
-        doc.setFont('courier')
-        doc.setFontType('normal')
+    const printer = event => {      
 //------------------------------extracting just advice messages-----------------------------------//
-
 var arr = new Array();
 var loop1 = 0;
 for(var i = a[0].length-1; i >= 0; i--){
@@ -92,9 +66,6 @@ for(var i = a[0].length-1; i >= 0; i--){
     }
   }
 } 
-console.log(arr)
-
-
 var doc = new jsPDF('p', 'mm', "a4");
 var options = {
   pagesplit: true
@@ -106,19 +77,21 @@ doc.setFontType('normal')
 
 //------------------------------initial doc set up end-----------------------------------//
 //------------------------------printing advice-----------------------------------//
-var y = new String();
-var loop2 = 0;
-for(var loop1 = arr.length-1; loop1 >= 0; loop1--){
-  doc.text(65, 23, 'Lifestyle Advice Report',)
-  doc.addImage(logo, 'png', 20, 20, 20, 20); 
-  doc.addImage(logo, 'png', 170, 20, 20, 20); 
-  doc.text('The text', doc.internal.pageSize.width, 50, null, null, 'left');
-  doc.text(17,55, "Advice : ");
-  doc.text(17,65, doc.splitTextToSize(arr[loop1]), {maxWidth: 165, align: "justify"})
-  doc = doc.addPage();
-}
-         doc.save('LifesytleAdvice.pdf')
+    var y = new String();
+    var loop2 = 1;
+    for(var loop1 = arr.length-1; loop1 >= 0; loop1--){
+      doc.text(65, 23, 'Lifestyle Advice Report',)
+      doc.text(90, 35, 'Page ' + loop2)
+      doc.addImage(logo, 'png', 20, 20, 20, 20); 
+      doc.addImage(logo, 'png', 170, 20, 20, 20);  
+      doc.text('The text', doc.internal.pageSize.width, 50, null, null, 'left');
+      doc.text(17,50, "Advice : ");
+      doc.text(17,60, doc.splitTextToSize(arr[loop1]), {maxWidth: 165, align: "justify"})
+      if(loop1 != 0)doc = doc.addPage();
+      loop2++;
     }
+         doc.save('LifesytleAdvice.pdf')
+  }
 
 
   // store is a state used by the imported 'Components' library
