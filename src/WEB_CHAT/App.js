@@ -117,16 +117,6 @@ for(var loop1 = arr.length-1; loop1 >= 0; loop1--){
   doc.text(17,65, doc.splitTextToSize(arr[loop1]), {maxWidth: 165, align: "justify"})
   doc = doc.addPage();
 }
-
-        // for(var i = arr.length-1; i>= 0; i--){
-        //   doc.text(65, 23, 'Lifestyle Advice Report',)
-        //   doc.addImage(logo, 'png', 10, 20, 20, 20); 
-        //   doc.addImage(logo, 'png', 180, 20, 20, 20); 
-        //   doc.text('The text', doc.internal.pageSize.width, 50, null, null, 'left');
-        //   doc.text(17,55, "Advice : ")
-        //   doc.text(17,65, doc.splitTextToSize(arr[loop1]), {maxWidth: 165, align: "justify"})
-        //   doc = doc.addPage();
-        // }
          doc.save('LifesytleAdvice.pdf')
     }
 
